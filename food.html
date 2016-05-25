@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Order First</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="framework/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <script src = "jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+	<script src = "jquery-ui-1.10.4/js/jquery-ui-1.10.4.js"></script>
+
+    
+    <!-- jQuery -->
+    <script src="framework/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="framework/js/bootstrap.min.js"></script>
+
+    <!-- main.js -->
+    <script src="main.js"> </script>
+
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top stillnav" role="navigation" >
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                	<img src="images/logoOrderFirst.png" width="100" height="100" class="logo">
+                </a>
+                <!-- <a class="navbar-brand" href="index.html">Order First</a> -->
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                	<li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                    	<br>
+                        <a href="about.html" class="menutext">About</a>
+                    </li>
+                    <li class="page-scroll">
+                    	<br>
+                        <a href="signin.html" class="menutext">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <br>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Service Panels -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <form id='myform' method='POST' action='orderdetail2.html'>
+        <div class="row startcontent">
+            <div class="col-lg-12">
+                <h2 class="page-header">(Restaurant's) Menu</h2>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body ">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>                        
+					    <input type='button' value='-' class='qtyminus' field='quantity' />
+					    <input type='text' name='quantity' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity1' />
+					    <input type='text' name='quantity1' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity1' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity2' />
+					    <input type='text' name='quantity2' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity2' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity3' />
+					    <input type='text' name='quantity3' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity3' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity4' />
+					    <input type='text' name='quantity4' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity4' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity5' />
+					    <input type='text' name='quantity5' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity5' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity6' />
+					    <input type='text' name='quantity6' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity6' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity7' />
+					    <input type='text' name='quantity7' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity7' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity8' />
+					    <input type='text' name='quantity8' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity8' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity9' />
+					    <input type='text' name='quantity9' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity9' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity10' />
+					    <input type='text' name='quantity10' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity10' />
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 col-sm-6">
+                <div class="panel panel-default text-center newcolumn">
+                    <a href="food.html">
+                        <img class="img-responsive img-hover" src="images/pizza.png" alt="">
+                    </a>
+                    <div class="panel-body">
+                        <h4>BBQ Chicken Pizza</h4>
+                        <p>Seasoned chicken, red onion on a BBQ sauce base.</p>
+                        <h3>$5.70</h3>
+                        <input type='button' value='-' class='qtyminus' field='quantity11' />
+					    <input type='text' name='quantity11' value='0' class='qty' />
+					    <input type='button' value='+' class='qtyplus' field='quantity11' />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+	        <input type="submit" value="Order Now" class="btn btn-primary">
+        </div>
+		</form>
+
+
+
+        <hr>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Order First 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    // This button will increment the value
+		    $('.qtyplus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        // If is not undefined
+		        if (!isNaN(currentVal)) {
+		            // Increment
+		            $('input[name='+fieldName+']').val(currentVal + 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		        console.log(currentVal);
+		    });
+		    // This button will decrement the value till 0
+		    $(".qtyminus").click(function(e) {
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        // If it isn't undefined or its greater than 0
+		        if (!isNaN(currentVal) && currentVal > 0) {
+		            // Decrement one
+		            $('input[name='+fieldName+']').val(currentVal - 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		        console.log(currentVal);
+		    });
+		});
+
+		
+	</script>
+	
+	
+</body>
+
+</html>

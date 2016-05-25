@@ -1,0 +1,296 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Order First</title>
+    
+    <script src="https://code.jquery.com/jquery-2.2.3.js"></script>
+    <script src="https://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- Bootstrap CSS -->
+    <link href="framework/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <script type = "text/javascript">
+    $(document).ready(function(){       
+	   var scroll_start = 0;
+	   var startchange = $('#startchange');
+	   var offset = startchange.offset();
+	    if (startchange.length){
+	   $(document).scroll(function() { 
+	      scroll_start = $(this).scrollTop();
+	      if(scroll_start > offset.top) {
+	          $(".navbar-inverse").css('background-color', 'rgba(0,0,0,0.9)');
+	       } else {
+	          $('.navbar-inverse').css('background-color', 'transparent');
+	          $('.menutext').css('color', '#ffffff');
+	       }
+	   });
+	    }
+	});
+    </script>
+
+        <!-- Page Content -->
+    <div class = "no-padding col-lg-12 col-md-12 col-sm-12 col-xs-12">
+
+		<!-- Image Header -->
+		<div id="myCarousel" class="carousel slide" data-ride="carousel">
+			  <!-- Indicators -->
+			  <ol class="carousel-indicators">
+			    <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			    <li data-target="#myCarousel" data-slide-to="1"></li>
+			    <li data-target="#myCarousel" data-slide-to="2"></li>
+			  </ol>
+			
+			  <!-- Wrapper for slides -->
+			  <div class="carousel-inner" role="listbox">
+			    <div class="item active">
+			      <img class = "carouselimg" src="images/sw-header.jpg" alt="Subway">
+			      <div class="carousel-caption">
+			        <h3>Subway</h3>
+			        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+			      </div>
+			    </div>
+			
+			    <div class="item">
+			      <img class = "carouselimg" src="images/gz-header.jpg" alt="Guzman">
+			      <div class="carousel-caption">
+			        <h3>Guzman Y Gomez</h3>
+			        <p>The atmosphere in Chania has a touch of Florence and Venice.</p>
+			      </div>
+			    </div>
+			
+			    <div class="item">
+			      <img class = "carouselimg" src="images/pz-header.jpg" alt="Pizza">
+			      <div class="carousel-caption">
+			        <h3>Pizza Caffe</h3>
+			        <p>Beatiful flowers in Kolymbari, Crete.</p>
+			      </div>
+			    </div>
+			
+			  <!-- Left and right controls -->
+			  <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+			    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+			    <span class="sr-only">Previous</span>
+			  </a>
+			  <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+			    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+			    <span class="sr-only">Next</span>
+			  </a>
+		</div>
+		<!-- /.row -->
+	</div>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top" style="background-color: white" > -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation" >
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#page-top">
+                	<img src="images/logoOrderFirst.png" width="100" height="100" class="logo">
+                </a>
+                <!-- <a class="navbar-brand" href="index.html">Order First</a> -->
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                	<li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                    	<br>
+                        <a href="about.html" class="menutext">About</a>
+                    </li>
+                    <li class="page-scroll">
+                    	<br>
+                        <a href="signin.html" class="menutext">Sign in</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <br>
+        <!-- Service List -->
+        <!-- The circle icons use Font Awesome's stacked icon classes. For more information, visit http://fontawesome.io/examples/ -->
+        <div id = "startchange">
+        <div class="row">
+            <div class="col-lg-12">
+                <h2 id = "pagetitle">P A R T I C I P A N T<br> R E S T A U R A N T</h2><br>
+            </div>
+            <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/mc.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">Main Course</a>
+                </h3>
+                <p>Main Course offers a variety of food and beverage options for all taste buds. There’s a range of options including pastas, rice dishes, burgers, hot food, roasts, salads, sandwiches, noodles, dumplings and a make-your-own sandwich, salad or wrap section. Our food are prepared freshly daily on-site.</p>
+				</div>
+            </div>
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/kc.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">Kebab & Co</a>
+                </h3>
+                <p>Located within the Main Course dining precinct, Kebab & Co offers freshly kebabs made to order. Their kebabs are made from the freshest, highest quality ingredients – the traditional way.</p>
+            	</div>
+            </div>
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/sw.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">Subway</a>
+                </h3>
+                <p>Located within the Main Course dining precinct, Subway offers customised sandwiches, wraps and salads.</p>
+            	</div>
+            </div>
+        </div>
+        </div>
+        <!-- /.row -->
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/gyg.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">Guzman Y Gomez</a>
+                </h3>
+                <p>Located in the new Union Arcade within the Union Arcade Guzman Y Gomez's menu is built on traditional Mexican flavours and made from only the highest quality ingredients.</p>
+            	</div>
+            </div>
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/ob.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">On a Roll Bakery</a>
+                </h3>
+                <p>On a Roll Bakery offers mouth-watering breakfast, morning tea and lunch options like bagels, bacon & cheese wraps, croissants, gourmet sandwiches, pastries, pies, donuts, cakes & slices. They are conveniently located in the centre of the UQU complex opposite STA Travel. Cold drinks are also available here.</p>
+            	</div>
+            </div>
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/pc.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">The Pizza Caffe</a>
+                </h3>
+                <p>Pizza Caffe is Brisbane's hidden gem, located within the University of Queensland on the St Lucia campus. Enjoy one of their 26 gourmet pizzas from our famous A-Z menu, which are inspired by Italian movies and actors in the licensed alfresco-style outdoor area or takeaway. Pizza Caffe also offers lasagne and salads, as well as coffee, alcoholic and non-alcoholic drinks. Gluten free pizza bases are also available.</p>
+            	</div>
+			</div>
+        </div>
+
+        <!-- Projects Row -->
+        <div class="row">
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/rr.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">Red Room Bar & Grill</a>
+                </h3>
+                <p>For decades, UQ students have flocked to the Red Room for a feed to accompany their beverage desires. Come to the Red Room with your mates for a drink and grab come hot chips, nachos, steak or the famous Red Room burger. You can chill out on the Red Room deck or play pool. More than just a place to drink, the Red Room is the entertainment hub on campus where you can see anything from Dj’s to trivia, from themed parties to karaoke</p>
+            	</div>
+            </div>
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/pec.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">The Physiol Eatery and Cafe</a>
+                </h3>
+                <p>Physiol Eatery & Café has everything you need. The café serves coffee, hot chocolate, tea, iced beverages and frappes. Whilst the Eatery offers a large variety of breakfast and lunch options such as a make-your-own sandwich and wrap station, sushi, rice & pasta dishes, roasts meals & sandwiches, burgers, hot dogs, chips, sausage rolls & pies, snacks, ice cream, cakes & slices and cold drinks. There is also a large indoor and outdoor seating area for you to sit, relax and enjoy.</p>
+            	</div>
+            </div>
+            <div class="col-md-4 img-portfolio">
+            	<div class = "newcolumn">
+                <a href="food.html">
+                    <img class="img-responsive img-hover" src="images/bj.png" alt="">
+                </a>
+                <h3>
+                    <a href="food.html">Boost Juice</a>
+                </h3>
+                <p>Located next to Mr Beans in the Union Complex, Boost Juice is a favourite amongst students and staff looking for a liquid lunch, post workout smoothie or fresh juice.</p>
+            	</div>
+            </div>
+        </div>
+        <!-- /.row -->
+        </div>
+        <!-- /.row -->
+
+        <hr>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p id = "copyright">Copyright &copy; Order First 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+   
+
+    <!-- jQuery -->
+    <!--<script src="framework/js/jquery.js"></script>-->
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="framework/js/bootstrap.min.js"></script>
+
+    <!-- main.js -->
+    <script src="main.js"> </script>
+    
+    <script type="text/javascript">
+	    $(document).ready(function(){
+		    
+	    });
+    </script>
+    
+    
+
+</body>
+
+</html>
