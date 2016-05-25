@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Hungry Fellow</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="framework/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Main CSS -->
+    <link href="main.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="framework/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    
+    <script src = "jquery-ui-1.10.4/js/jquery-1.10.2.js"></script>
+	<script src = "jquery-ui-1.10.4/js/jquery-ui-1.10.4.js"></script>
+
+    
+    <!-- jQuery -->
+    <script src="framework/js/jquery.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="framework/js/bootstrap.min.js"></script>
+
+    <!-- main.js -->
+    <script src="main.js"> </script>
+
+	
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top stillnav" role="navigation" >
+        <div class="container">
+            <div class="navbar-header page-scroll">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="index.html">
+                	<img src="images/logoOrderFirst.png" width="100" height="100" class="logo">
+                </a>
+            </div>
+            <div class="collapse navbar-collapse navbar-right navbar-main-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                	<li class="hidden">
+                        <a href="#page-top"></a>
+                    </li>
+                    <li class="page-scroll">
+                    	<br>
+                        <a href="about.html" class="menutext">About Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <!-- /.container -->
+    </nav>
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+
+    <!-- Page Content -->
+    <div class="container">
+
+        <!-- Jumbotron Vote -->
+        <div class="jumbotron">
+          <h2><b>Are you hungry and in a hurry?</b></h2>
+          <p> You have come to the right place! <b>Hungry Fellow</b> is the free and premium online platform for takeaway food mechanism. We have a top quality restaurants that ready to recieve your order anytime and anywhere. Save your time and say goodbye to the day when you have to waiting in the queue at the restaurant.</p> 
+          <p> How it works: You pick a restaurant, find the food you like, choose your payment, then pickup your food.</p>   
+          <p>Get your order now and pick up your food.</p>
+          <p><a class="btn btn-primary btn-lg" href="index.html" role="button">Order Now</a></p>
+        </div>
+
+
+
+        <hr>
+
+
+        <!-- Footer -->
+        <footer>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p>Copyright &copy; Hungry Fellow 2016</p>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+    <!-- /.container -->
+	
+	<script type="text/javascript">
+		$(document).ready(function(){
+		    // This button will increment the value
+		    $('.qtyplus').click(function(e){
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        // If is not undefined
+		        if (!isNaN(currentVal)) {
+		            // Increment
+		            $('input[name='+fieldName+']').val(currentVal + 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		        console.log(currentVal);
+		    });
+		    // This button will decrement the value till 0
+		    $(".qtyminus").click(function(e) {
+		        // Stop acting like a button
+		        e.preventDefault();
+		        // Get the field name
+		        fieldName = $(this).attr('field');
+		        // Get its current value
+		        var currentVal = parseInt($('input[name='+fieldName+']').val());
+		        // If it isn't undefined or its greater than 0
+		        if (!isNaN(currentVal) && currentVal > 0) {
+		            // Decrement one
+		            $('input[name='+fieldName+']').val(currentVal - 1);
+		        } else {
+		            // Otherwise put a 0 there
+		            $('input[name='+fieldName+']').val(0);
+		        }
+		        console.log(currentVal);
+		    });
+		});
+
+		
+	</script>
+	
+	
+</body>
+
+</html>
