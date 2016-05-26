@@ -30,7 +30,15 @@ p{
 .newcolumn{
 	padding: 20px;
 	height: 500px;
-	border: #1FBBA6;
+	border: #000000;
+	border-style: solid;
+	border-width: 2px;
+}
+
+.newfoodcolumn{
+	padding: 20px;
+	height: 450px;
+	border: #000000;
 	border-style: solid;
 	border-width: 2px;
 }
@@ -39,7 +47,7 @@ p{
 	text-align: center;
 }
 
-#copyright{
+.copyright{
 	text-align: center;
 }
 
@@ -216,4 +224,8 @@ input.qtyminus { width:25px; height:25px;}
 
 .startcontent {
 	margin-top: 60px;
+}
+
+.submit {
+	font-family: 'Moon Light';
 }
